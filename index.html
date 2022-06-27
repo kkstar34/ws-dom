@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop dom</title>
+
+    <style>
+        .box-container{
+            margin-top : 2rem;
+            display: flex;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-right: 1rem;
+            transition: ease-in-out 0.5s;
+        }
+
+        .box-1{
+            background-color: blue;
+        }
+
+        .box-2{
+            background-color: red;
+        }
+        .box-3{
+            background-color: green;
+        }
+
+
+        .bg-color{
+            background-color: black;
+        }
+        .translate{
+            transform: rotate(360deg);
+        }
+        .btn-add-box{
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">Bienvenue au workshop de dom</h1>
+        <button id="btn">Changer le titre</button>
+
+        <div class="box-container">
+            <div class="box box-1">box 1</div>
+            <div class="box box-2">box 2</div>
+            <div class="box box-3 ">box 3</div> 
+        </div>
+
+        <button class="btn-add-box">Add new box</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
